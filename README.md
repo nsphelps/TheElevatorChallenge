@@ -26,5 +26,5 @@ The initial design approach is straightforward. Rather than make assumptions abo
 * Add timing mechanism between messages to more accurately simulate the experience of using an elevator (i.e. pause between 'dings', doors opening, etc.).
 * Add multiple riders by creating a method for generating new riders with random starting floors / floor requests.
 * Add a system to track pending calls to the elevator.
-* Add a 'nearest floor' tracking system for riders (i.e. if multiple users are getting off at a given floor, unload all).
+* Add a 'nearest floor' instead of FIFO for loading / unloading riders.
 * Add system for tracking number of riders currently in the elevator and give error message if too many riders are in at once.  
