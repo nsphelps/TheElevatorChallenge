@@ -1,13 +1,30 @@
 # TheElevatorChallenge
-The is a coding challenge to simulate the function of an elevator
+## Overview
+The Elevator Challenge is a coding exercise that simulates the functionality of an elevator within a multi-story building.
 
 # v1.0
-My initial design is simple. I didn't wan't to make assumptions about where the user or elevator would be within the building so I initialize the program with the elevator on a random floor between 0 and 5 (0 being the ground floor). The user also begins on a random floor, this is to account for a user taking the stairs or perhaps leaving the building after coming prior to the program running. I created three classes, the Rider class, the Elevator class, and TheElevatorChallenge class which contains the main function. 
+## Project Structure
+The initial design approach is straightforward. Rather than make assumptions about the starting position of the user and the elevator, the program initializes both the elevator and the user on random floors between 0 and 5 (where 0 represents the ground floor). This accounts for scenarios where a user might take the stairs or had previously entered the building before the program runs. 
 
-The rider class is used to initialize new riders and their starting floor as well as provide a method of getting their current floor. 
-
-The Elevator class initializes new elevator objects with a starting floor and a list used to store requests. The Elevator class also contains methods for validating that a requested floor is legitimate and adding it to the requests list as well as moving the elevator to the rider or requested floor as needed. Finally, 
-
-TheElevatorChallenge class contains the main function which calls the functions to get the elevator's initial, random floor and create a new elevator object as well as begins the main while loop that will continuously generate new riders and move them to various floors until the user enters '-1' to exit the program. 
-
-In future updates I want to add additional functionality. Specifically, I want to add checks to ensure that the doors are open or closed before the elevator moves, I want to add timing between the messages to more accurately simulate the time between outputs from an elevator (i.e. dings, doors open, etc). Finally, I would like to introduce the possibility of additional riders which would require the creation of a "floor" class that might generate a number of random users / requested floor requests. This will also require a way to track pending calls to the elevator and deconflict with calls in the current requests list. 
+# Classes
+1. Rider Class
+      * Responsible for initializing new riders and their starting floors.
+      * Provides a method to retrieve the current floor of the rider.
+2. Elevator Class
+      * Initializes new elevator objects with a starting floor and maintains a list to store floor requests.
+      * Contains methods to:
+          * Validate requested floors,
+          * Add legitimate requests to the list (if not already there),
+          * Move the elevator to the requested floor or to the rider's floor.
+3. TheElevatorChallenge Class
+     * Contains the main function that orchestrates the program flow.
+     * Initializes the elevator's starting floor randomly and creates a new elevator object.
+     * Initiates a continuous loop that generates new riders and moves them to their desired floors until the user enters "-1" as a requested floor, ending the program.
+       
+# Future Enhancements
+* Add checks to ensure elevator doors are open / closed when loading / unloading riders.
+* Add timing mechanism between messages to more accurately simulate the experience of using an elevator (i.e. pause between 'dings', doors opening, etc.).
+* Add multiple riders by creating a method for generating new riders with random starting floors / floor requests.
+* Add a system to track pending calls to the elevator.
+* Add a 'nearest floor' tracking system for riders (i.e. if multiple users are getting off at a given floor, unload all).
+* Add system for tracking number of riders currently in the elevator and give error message if too many riders are in at once.  
