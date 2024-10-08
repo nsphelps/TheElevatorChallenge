@@ -6,6 +6,12 @@ The Elevator Challenge is a coding exercise that simulates the functionality of 
 ## Project Structure
 The initial design approach is straightforward. Rather than make assumptions about the starting position of the user and the elevator, the program initializes both the elevator and the user on random floors between 0 and 5 (where 0 represents the ground floor). This accounts for scenarios where a user might take the stairs or had previously entered the building before the program runs. 
 
+## Assumptions
+* There is only a single rider
+* The elevator can only move in a single direction at a time
+* There is a limited number of floors in the building
+* There are no basement / underground floors 
+
 ## Classes
 1. Rider Class
       * Responsible for initializing new riders with a starting floor.
