@@ -28,7 +28,7 @@ The initial design approach is straightforward. Rather than make assumptions abo
      * Initializes the rider's starting floor randomly and creates a new rider object.
      * Initiates a continuous loop that generates new riders and moves them to their desired floors until the user enters "-1" as a requested floor, ending the program.
        
-## Non-Implemented Enhancements
+## Future Enhancements
 * Checks to ensure elevator doors are open / closed when loading / unloading riders.
 * Timing mechanism between messages to more accurately simulate the experience of using an elevator (i.e. pause between 'dings', doors opening, etc.).
 * Simulate multiple riders with random starting floors / floor requests.
