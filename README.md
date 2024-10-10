@@ -35,3 +35,9 @@ The initial design approach is straightforward. Rather than make assumptions abo
 * System to track pending calls to the elevator.
 * A 'nearest floor' instead of FIFO for loading / unloading riders.
 * System for tracking number of riders currently in the elevator and give error message if too many riders are in at once.
+
+# v1.1
+* Added some additional error handling
+* Added some additional flavor to the beginning of the program
+* Separated some functions our of the main function and created / modified some methods in the Rider and Elevator classes
+* Added feature to simulate pauses when elevator travels between floors and when loading and unloading riders. 
