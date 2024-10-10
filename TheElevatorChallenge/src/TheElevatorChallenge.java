@@ -37,7 +37,6 @@ public class TheElevatorChallenge {
                 reqFloor = sc.nextInt();
             } else {
                 System.out.println("ERROR: Invalid input");
-                return;
             }
 
             // If requested floor is -1 then quit program
