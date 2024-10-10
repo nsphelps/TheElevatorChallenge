@@ -5,8 +5,15 @@ The Elevator Challenge is a coding exercise that simulates the functionality of 
 ## Project Structure
 The initial design approach is straightforward. Rather than make assumptions about the starting position of the user and the elevator, the program initializes both the elevator and the user on random floors between 0 and 5 (where 0 represents the ground floor). This accounts for scenarios where a user might take the stairs or had previously entered the building before the program runs. 
 
+When the user's rider successfully moves from one floor to another, a new rider is generated for the user on a random floor and is prompted to select a new requested floor. 
+
+## Directions
+* Input a number between 0 - 5 to travel between floors.
+* Enter -1 to exit the program.
+* Entering an invalid input (i.e. char, string, etc) will result in the program exiting.
+  
 ## Assumptions
-* There is only a single rider
+* There is only a single rider (I am working to build out a method for generating new 'npc' riders at each floor that will have their own requested destinations to travel to. 
 * The elevator can only move in a single direction at a time
 * There is a limited number of floors in the building
 * There are no basement / underground floors 
